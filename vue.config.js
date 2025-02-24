@@ -21,7 +21,7 @@ module.exports = {
     },
   },
   pwa: {
-    name: 'YesPlayMusic',
+    name: '2DMusik', // 修改这里
     iconPaths: {
       favicon32: 'img/icons/favicon-32x32.png',
     },
@@ -89,14 +89,14 @@ module.exports = {
       externals: ['@unblockneteasemusic/rust-napi'],
       builderOptions: {
         productName: '2DMusik',
-        copyright: 'Copyright © YesPlayMusic',
+        copyright: 'Copyright © 2DMusik',
         // compression: "maximum", // 机器好的可以打开，配置压缩，开启后会让 .AppImage 格式的客户端启动缓慢
         asar: true,
         publish: [
           {
             provider: 'github',
-            owner: 'qier222',
-            repo: 'YesPlayMusic',
+            owner: 'Dapur2D', // 修改这里
+            repo: '2DMusik', // 修改这里
             vPrefixedTagName: true,
             releaseType: 'draft',
           },
@@ -126,7 +126,7 @@ module.exports = {
               arch: ['x64'],
             },
           ],
-          publisherName: 'YesPlayMusic',
+          publisherName: '2DMusik',
           icon: 'build/icons/icon.ico',
           publish: ['github'],
         },
